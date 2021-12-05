@@ -1,0 +1,138 @@
+doctype html
+title Chiromeisjes Marke
+meta(charset='UTF-8')
+meta(name='viewport' content='width=device-width, initial-scale=1')
+link(rel='stylesheet' href='/stylesheets/style.css')
+link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+style.
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+style.
+  body,h1 {font-family: "Montserrat", sans-serif}
+  img {margin-bottom: -7px}
+  .w3-row-padding img {margin-bottom: 12px}
+
+
+// Navbar
+.w3-top
+    .w3-bar.w3-red.w3-card.w3-left-align.w3-large
+        a.w3-bar-item.w3-button.w3-hide-medium.w3-hide-large.w3-right.w3-padding-large.w3-hover-white.w3-large.w3-red(href='javascript:void(0);' onclick='myFunction()' title='Toggle Navigation Menu')
+            i.fa.fa-bars
+        a.w3-bar-item.w3-button.w3-hide-small.w3-padding-large.w3-hover-grayscale(href='/') Home
+        a.w3-bar-item.w3-button.w3-hide-small.w3-padding-large.w3-hover-grayscale(href='/groepen') Groepen
+        a.w3-bar-item.w3-button.w3-padding-large.w3-white.w3-hover-white(href='/fotos') Foto&apos;s
+        a.w3-bar-item.w3-button.w3-hide-small.w3-padding-large.w3-hover-grayscale(href='/leiding') Leiding
+        a.w3-bar-item.w3-button.w3-hide-small.w3-padding-large.w3-hover-grayscale(href='/contacteren') Contacteren
+
+    // Navbar on small screens
+    #navDemo.w3-bar-block.w3-white.w3-hide.w3-hide-large.w3-hide-medium.w3-large
+        a.w3-bar-item.w3-button.w3-padding-large(href='/') Home
+        a.w3-bar-item.w3-button.w3-padding-large(href='/groepen') Groepen
+        a.w3-bar-item.w3-button.w3-padding-large(href='/leiding') Leiding
+        a.w3-bar-item.w3-button.w3-padding-large(href='/contacteren') Contacteren
+
+// Header
+header.w3-center.w3-margin-bottom.w3-margin-top
+  h1.w3-margin-top
+    b SFEERBEELDEN
+  p.w3-padding-16
+    button.w3-button.w3-black(onclick='toggle()') rooster aan/uit
+// Photo Grid
+#myGrid.w3-row(style='margin-bottom:128px')
+  #col1.w3-third
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/257546598_4767149713373610_8160743199493460121_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=0debeb&_nc_ohc=RZqsifZtHQgAX8MIhKs&tn=LEHl9jmrJxgSNTg_&_nc_ht=scontent-bru2-1.xx&oh=e15d3ce5156ea98a3ede5b3c4e4b83f6&oe=61AB66E8' style='width:100%')
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/249586637_4659445930810656_6805128524450382313_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=XZViX-9wuYUAX_NKWYW&_nc_ht=scontent-bru2-1.xx&oh=313a35fd9ed00d46623ceeefa615bd3c&oe=61AF0C45' style='width:100%')
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/261666414_4767173196704595_2171750306504440604_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=0debeb&_nc_ohc=iQ9-qgT-Yw8AX-X5mHr&_nc_ht=scontent-bru2-1.xx&oh=4714d025cdc7fba68d109c07b385bdac&oe=61AC107D' style='width:100%')
+  #col2.w3-third
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/249196113_4659447940810455_6221437388683806720_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=-VjiEiOqo9cAX9MBO1d&tn=LEHl9jmrJxgSNTg_&_nc_ht=scontent-bru2-1.xx&oh=bb544fa55808a1a4d089521f809a2270&oe=61AD63BB' style='width:100%')
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/247390334_4636802743074975_2589386613862871882_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=0debeb&_nc_ohc=hi84r54U2WYAX-SewL0&_nc_ht=scontent-bru2-1.xx&oh=92c4a85ea3ee209b7ddf4342c3d56de4&oe=61AAF1C7' style='width:100%')
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/249563715_4659428837479032_3004226530996885638_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=WFEuQyvdiJkAX_tB4g6&_nc_ht=scontent-bru2-1.xx&oh=9a6944293b5b2aca6650383694f79245&oe=61AED215' style='width:100%')
+
+  #col3.w3-third
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/250985724_4666613653427217_5123345880289847617_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=B59nH1JbrO8AX-cawSU&_nc_ht=scontent-bru2-1.xx&oh=4177b86b9183a62df08086520b6714a2&oe=61AE41F5' style='width:100%')
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/251671490_4678267582261824_8172245107981338080_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=0debeb&_nc_ohc=aB9oU39AoksAX8HnF0u&_nc_ht=scontent-bru2-1.xx&oh=11109cca2120d8a3025164957dcb7873&oe=61AED9E7' style='width:100%')
+    img(src='https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/249700559_4659428140812435_8994014534032969335_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=qNzECZPDS2gAX98zYmv&_nc_oc=AQk_q4m1LRPykKOiq9QCgkkh_N4-rmqqICbA8feqYmR97yCYbMPJV8qTfH9eiEZb84bnFUUwEzU3h71acPB7RD5j&_nc_ht=scontent-bru2-1.xx&oh=5c004404575b9af08a512727393b1f7a&oe=61AE419D' style='width:100%')
+
+// button voor ajax
+header.w3-center
+  p.w3-padding-16
+    button#button.w3-button.w3-black(onclick='meerFotos()') Nieuwe Fotos
+
+
+// End Page Content
+  
+    
+script.
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // Toggle grid padding
+    function toggle() {
+        var x = document.getElementById("myGrid");
+        if (x.className === "w3-row") {
+            x.className = "w3-row-padding";
+        } else {
+            x.className = x.className.replace("w3-row-padding", "w3-row");
+        }
+    }
+
+script.
+  //meer fotos inladen
+  function meerFotos(){
+  var xhr = new XMLHttpRequest();
+  
+  xhr.open('GET','fotos.json',true);
+  
+  xhr.onload = function(){
+    if(this.status == 200){
+      var fotos = JSON.parse(this.responseText)
+      var col1 = '';
+      var col2 = '';
+      var col3 = '';
+      var teller = 1
+      var set = new Set()
+      console.log(Object.keys(fotos).length)
+      for(var i = 0; i < 9; i++){
+        var random = Math.floor(Math.random() * Object.keys(fotos).length);
+        while(set.has(random)){
+          random = Math.floor(Math.random() * Object.keys(fotos).length);
+        }
+        set.add(random);
+        //console.log(random)
+        if(teller == 1){
+          col1 +=
+          '<img src="'+fotos[random].url+' " style="width:100%">';
+          teller++;
+        }else if(teller == 2){
+          col2 +=
+          '<img src="'+fotos[random].url+' " style="width:100%">';
+          teller++;
+        }else if(teller == 3){
+          col3 +=
+          '<img src="'+fotos[random].url+' " style="width:100%">';
+          teller = 1;
+        }
+      } 
+    } 
+  
+  document.getElementById('col1').innerHTML = col1;
+  document.getElementById('col2').innerHTML = col2;
+  document.getElementById('col3').innerHTML = col3;
+
+  //terug naar bovenaan pagina gaan
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  xhr.send();  
+  }
+    

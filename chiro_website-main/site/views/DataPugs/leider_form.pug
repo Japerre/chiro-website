@@ -1,0 +1,19 @@
+doctype html
+
+
+
+link(rel='stylesheet' href='/stylesheets/inschrijfStyle.css')
+
+
+//form
+button
+    a(href='/data') Home
+.contact-us
+    form(method='POST' action='')
+        h1 Leiding Toevoegen
+        input#voornaam(type='text', placeholder='Voornaam', name='voornaam', required='')
+        input#achternaam(type='text', placeholder='Achternaam', name='achternaam', required='')
+        input#leeftijd(type='number' placeholder='Leeftijd' name ='leeftijd' required='')
+        input#groep(type="text", placeholder='Groep of functie', name= 'groep', required='')
+        input#fotolink(type='url', placeholder='Plaats hier een profielfoto link (https)', name='fotolink', required='')
+        button(type='submit') Toevoegen!
